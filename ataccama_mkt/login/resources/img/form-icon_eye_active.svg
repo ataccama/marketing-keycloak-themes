@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>C26015F4-697D-451E-804E-FDCBD363D316</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M9,2 C6.72822419,2 4.55907245,3.27464778 2.46060364,6 C4.55907245,8.72535222 6.72822419,10 9,10 C11.2717758,10 13.4409275,8.72535222 15.5393964,6 C13.4409275,3.27464778 11.2717758,2 9,2 Z M9,12 C5.6862915,12 2.6862915,10 0,6 C2.6862915,2 5.6862915,0 9,0 C12.3137085,0 15.3137085,2 18,6 C15.3137085,10 12.3137085,12 9,12 Z M9,9 C10.6568542,9 12,7.65685425 12,6 C12,4.34314575 10.6568542,3 9,3 C7.34314575,3 6,4.34314575 6,6 C6,7.65685425 7.34314575,9 9,9 Z" id="path-1"></path>
+    </defs>
+    <g id="New-Cloud" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Log-in---Icons" transform="translate(-1480.000000, -399.000000)">
+            <g id="Sidebar" transform="translate(1010.000000, 0.000000)">
+                <g id="Content" transform="translate(84.000000, 143.000000)">
+                    <g id="1" transform="translate(0.000000, 205.000000)">
+                        <g id="Icons-/-Small---20px-/icon-eye" transform="translate(385.000000, 47.000000)">
+                            <g id="icon-eye" transform="translate(1.000000, 4.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Icons/Colors/Grey-Light" mask="url(#mask-2)" fill="#757575">
+                                    <g transform="translate(-1.000000, -4.000000)">
+                                        <rect x="0" y="0" width="20" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
