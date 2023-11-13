@@ -56,7 +56,7 @@
 
       </script>
     <#elseif section = "title">
-        ${msg("loginTitle",(realm.displayName!''))}
+        ${msg("loginTitle",(client.name!''))}
     <#elseif section = "header">
         ${msg("loginHeader")?no_esc}
     <#elseif section = "form">
