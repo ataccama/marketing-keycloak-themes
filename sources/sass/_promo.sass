@@ -1,0 +1,102 @@
+.Promo
+  &-header
+    font-size: 34px
+    font-weight: 800
+    margin-bottom: 20px
+    margin-top: 30px
+    text-align: center
+
+    @media only screen and (min-width: 600px)
+      text-align: left
+      margin-bottom: 40px
+      margin-top: 0
+
+  &-tabs
+    display: flex
+    flex-direction: row
+    margin-bottom: 32px
+
+  &-tab
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex: 1 0
+    color: #343a40
+    text-decoration: none
+
+    &:hover
+      .Promo-tab-logo
+        background-color: transparent
+        transition: all 250ms ease
+
+      .Promo-tab-logo-item
+        transform: scale(1.2)
+        transition: all 250ms ease
+
+      .Promo-tab-header
+        color: $brand-pink
+
+    &-logo
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 80px
+      height: 80px
+      margin-bottom: 15px
+      background-color: #f1f3f5
+      padding: 0 10px
+      transition: all 500ms ease
+
+      &-item
+        max-width: 100%
+        transition: all 500ms ease
+
+    &-content
+      margin-bottom: 15px
+      font-size: 16px
+      color: #868e96
+
+    &-header
+      font-size: 20px
+      font-weight: 800
+      margin-bottom: 8px
+
+  &-more-header
+    font-size: 20px
+    font-weight: 500
+    margin-bottom: 24px
+
+  &-more-badges
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+  &-more-badge
+    display: flex
+    align-items: center
+    background-color: #ede7f6
+    color: $primary
+    border-radius: 99px
+    padding: 4px 16px 4px 4px
+    font-size: 20px
+    font-weight: 800
+    margin-right: 16px
+    margin-bottom: 16px
+    text-decoration: none
+
+    &-content
+      position: relative
+      top: 2px
+
+    &:before
+      content: ""
+      display: flex
+      background-image: url("#{$path-to-image}/checkmark-m.svg")
+      background-size: 37px
+      background-repeat: no-repeat
+      background-position: center
+      width: 48px
+      height: 48px
+      background-color: $white
+      border-radius: 99px
+      margin-right: 8px

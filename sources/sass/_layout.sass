@@ -1,0 +1,50 @@
+.Layout
+  display: flex
+  flex-direction: column
+
+  @media only screen and (min-width: 1199px) and (min-height: 1000px)
+    justify-content: center
+
+  @media only screen and (min-width: 600px)
+    align-items: center
+
+  @media only screen and (min-width: 1199px)
+    height: 100%
+
+  &-container
+    display: flex
+    width: calc(100% - 30px)
+    margin-left: 15px
+    margin-right: 15px
+    flex-direction: column
+    margin-bottom: 100px
+
+    @media only screen and (min-width: 1199px)
+      max-width: 1200px
+      min-width: 1200px
+      width: 100%
+      flex-direction: row
+      margin-bottom: 0
+
+  &-top
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &-left,
+  &-right
+    padding: 20px
+    width: 100%
+
+    @media only screen and (min-width: 600px)
+      padding: 40px
+
+  &-right
+    background-color: $layout-right-bg
+    border-radius: 0 $layout-border-radius $layout-border-radius 0
+
+  &-header
+    font-size: 24px
+    margin-bottom: 72px
+    font-weight: 800
+    text-align: center

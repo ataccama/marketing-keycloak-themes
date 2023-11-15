@@ -1,0 +1,71 @@
+.modal-content
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 100%
+  pointer-events: auto
+  background-color: #fff
+  background-clip: padding-box
+  border: 1px solid #dee2e6
+  border-radius: 32px
+  outline: 0
+
+  p
+    font-size: 1.2rem
+    line-height: 1.5
+    margin: 0 0 24px 0
+
+  a
+    color: $brand-pink
+
+.modal-body
+  padding: 40px
+
+  .form-button
+    width: 100%
+
+  .mt-24
+    margin-top: 24px
+
+  .mb-24
+    margin-bottom: 24px
+
+.modal-header
+  align-items: center
+  padding: 32px 42px 22px
+
+.cookieModal-title
+  display: flex
+  align-items: center
+
+  .mr-24
+    margin-right: 24px
+
+  span
+    font-size: 1.5rem
+    font-weight: 800
+
+.Link--expand
+  display: flex
+  text-decoration: none
+  font-size: 1.2rem
+  align-items: center
+
+  &[aria-expanded="true"]
+    &::after
+      transform: rotate(180deg)
+
+  &::after
+    content: " "
+    width: 32px
+    height: 32px
+    margin-right: 4px
+    background-image: url("../img/expand-m.svg")
+
+// Custom inputs
+.custom-control-label
+  font-size: 1.2rem
+
+  &::before,
+  &::after
+    top: 0

@@ -1,0 +1,244 @@
+.form
+  color: #757575
+  font-size: 20px
+
+.Layout-left a:link,
+.Layout-left a:visited,
+.Layout-left a:focus,
+.Layout-left a:hover
+  color: $brand-pink
+  font-size: 20px
+  font-weight: 500
+  text-decoration: none
+
+.Layout-left a:focus,
+.Layout-left a:hover
+  text-decoration: underline
+
+.form-input
+  box-sizing: border-box
+  width: 100%
+  border: 2px solid #ced4da
+  border-radius: 8px
+  color: #757575
+  line-height: 20px
+  padding: 20px 16px
+  font-size: 20px
+  font-weight: 500
+  font-family: $font-family-base
+  margin-top: 10px
+
+.form-input_error
+  position: absolute
+  top: 82px
+  left: 0
+  color: #ff2121
+  font-size: 16px
+
+.form-label_wrapper
+  position: absolute
+  left: 16px
+
+.form-label
+  font-size: 16px
+  font-weight: 800
+  background-color: $primary
+  color: $white
+  border-radius: 4px
+  padding: 5px 8px 3px
+
+.form-label_option
+  display: inline-block
+  position: absolute
+  right: 0
+
+.form-group
+  margin-bottom: 30px
+  position: relative
+
+.form-double_group
+  display: flex
+  width: calc(100% + 20px)
+
+.form-double_group_subgroup
+  flex: auto
+  margin-right: 20px
+
+.form-options
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 30px
+  font-size: 20px
+
+.form-checkbox
+  -webkit-appearance: none
+  -moz-appearance: none
+  display: inline-block
+  height: 18px
+  width: 18px
+  border: 1px solid #E0E0E0
+  border-radius: 2px
+  background-color: $white
+  margin: 0 12px 0 0
+
+.form-checkbox:checked
+  background: #FFFFFF url('#{$path-to-image}/check.svg') no-repeat 50%
+
+.form-checkbox:hover
+  border: 1px solid silver
+
+.form-checkbox_label
+  display: flex
+  flex-direction: row
+  align-items: center
+  color: #757575
+  cursor: pointer
+
+.form-button
+  display: flex
+  background-color: $brand-pink
+  border: none
+  color: $white !important
+  font-size: 24px
+  font-weight: 800
+  text-decoration: none
+  cursor: pointer
+  transition: background-color .15s
+  padding: 17px 24px
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  border-radius: 8px
+  -webkit-appearance: none
+
+  &:hover
+    text-decoration: none !important
+
+  &__label
+    position: relative
+    top: 2px
+
+  &__icon
+    background-repeat: no-repeat
+    width: 29px
+    height: 29px
+    display: inline-block
+    margin-right: 16px
+    background-size: 100%
+
+.form-button:hover
+  background-color: darken($brand-pink, 5%)
+
+.form-button:active
+  background-color: darken($brand-pink, 10%)
+  outline: none
+
+.form-social_button-google
+  background-color: #5185ec
+
+  &:hover
+    background-color: #446ec1
+
+  &:active
+    background-color: #335390
+
+  .form-button__icon
+    background-image: url('#{$path-to-image}/form-google.svg')
+
+.form-social_button-linkedin
+  background-color: #3176b0
+
+  &:hover
+    background-color: #2c639a
+
+  &:active
+    background-color: #1e486a
+
+  .form-button__icon
+    background-image: url('#{$path-to-image}/form-linkedin.svg')
+
+.form-social_buttons_list
+  display: flex
+  list-style: none
+  padding: 0
+  justify-content: center
+
+  @media (max-width: 478px)
+    flex-direction: column
+
+.form-social_buttons_list_item
+  margin: 12px
+
+  @media only screen and (min-width: 600px)
+    margin: 0 12px
+
+.alert
+  font-size: 14px
+  margin-bottom: 15px
+
+.alert-error
+  color: #ff2121
+
+//.form-password_group
+//  display: flex
+//  flex-direction: row
+//
+//.form-password
+//  border-top-right-radius: 0
+//  border-bottom-right-radius: 0
+//  flex: auto
+//  width: unset
+//
+//.form-password::-ms-clear, .form-password::-ms-reveal
+//  display: none
+//
+//.form-show_password
+//  flex: none
+//  height: 52px
+//  width: 52px
+//  margin: 0
+//  display: inline-block
+//  border: 1px solid #E0E0E0
+//  border-left: none
+//  border-top-right-radius: 2px
+//  border-bottom-right-radius: 2px
+//  background: #F5F6F8 url('#{$path-to-image}/form-icon_eye.svg') no-repeat 50%
+//  cursor: pointer
+//  outline: none
+//
+//.form-show_password--checked, .form-show_password:hover
+//  background-image: url('#{$path-to-image}/form-icon_eye_active.svg')
+
+.form-social_buttons_or
+  width: 100%
+  text-align: center
+  margin: 40px 0
+  font-size: 20px
+  font-weight: 500
+  color: #868e96
+  display: flex
+  align-items: center
+
+  span
+    padding: 0 16px
+
+  &:before
+    content: ""
+    background-color: #ced4da
+    width: 100%
+    height: 1px
+
+  &:after
+    content: ""
+    background-color: #ced4da
+    width: 100%
+    height: 1px
+
+.form-navigation_links
+  margin-top: 56px
+  text-align: center
+  font-size: 20px
+  background-color: rgb(248, 249, 250)
+  padding: 16px 0
