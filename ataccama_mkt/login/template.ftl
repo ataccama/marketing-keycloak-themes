@@ -90,49 +90,6 @@
           <#nested "form">
           <#nested "info">
       </div>
-      <div class="${properties.layoutRightClass!}">
-        <div class="Promo">
-          <div class="Promo-header">Single login, premium tools.<br><span class="text-primary">For free.</span></div>
-          <div class="Promo-tabs">
-            <a href="https://www.ataccama.com/platform/data-observability" target="_blank" title="Data Observability" class="Promo-tab">
-              <div class="Promo-tab-logo"><img class="Promo-tab-logo-item" src="${url.resourcesPath}/img/one.svg" alt="Data Observability"></div>
-              <div class="Promo-tab-header">Data Observability</div>
-              <div class="Promo-tab-content">AI-powered monitoring for your data stack</div>
-            </a>
-            <a href="https://datastories.ataccama.com/" target="_blank" title="Data Stories" class="Promo-tab">
-              <div class="Promo-tab-logo"><img class="Promo-tab-logo-item" src="${url.resourcesPath}/img/data_stories.svg" alt="Data Stories"></div>
-              <div class="Promo-tab-header">Data Stories</div>
-              <div class="Promo-tab-content">Next generation data visualization tool</div>
-            </a>
-            <a href="https://www.ataccama.com/dqa" target="_blank" title="Data Quality Analyzer"
-               class="Promo-tab isLast">
-              <div class="Promo-tab-logo"><img class="Promo-tab-logo-item" src="${url.resourcesPath}/img/dqa-logo.svg" alt="DQA"></div>
-              <div class="Promo-tab-header">DQ Analyzer</div>
-              <div class="Promo-tab-content">Market-leading data profiling tool</div>
-            </a>
-          </div>
-          <div class="Promo-more">
-            <div class="${properties.formSocialButtonsOrClass!}">
-              <span>Plus</span>
-            </div>
-            <div class="Promo-more-badges">
-              <a href="https://www.ataccama.com/resources" target="_blank" title="Premium content"
-                 class="Promo-more-badge">
-                <span class="Promo-more-badge-content">Premium content</span>
-              </a>
-              <a href="https://support.ataccama.com" target="_blank" title="Support" class="Promo-more-badge">
-                <span class="Promo-more-badge-content">Support</span>
-              </a>
-              <a href="https://docs.ataccama.com" target="_blank" title="Docs" class="Promo-more-badge">
-                <span class="Promo-more-badge-content">Docs</span>
-              </a>
-              <a href="https://community.ataccama.com" target="_blank" title="Community" class="Promo-more-badge">
-                <span class="Promo-more-badge-content">Community</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
       <#--    <div class="Banner">-->
       <#--      <div class="Banner-inner">-->
