@@ -69,7 +69,7 @@
   <div class="${properties.layoutBodyClass!}">
     <div class="${properties.layoutTopClass!}">
       <a href="${properties.ataccamaUrl!}" target="_blank" class="Logo">
-        <img class="Logo-item" src="${url.resourcesPath}/img/logo.svg" alt="Ataccama">
+        <img class="Logo-item" src="${url.resourcesPath}/img/ataccama-cloud-symbol@2x.png" alt="Ataccama">
       </a>
       <div class="${properties.layoutHeaderClass!}">Sign in to <#if client??>${client.name}<#else>Ataccama</#if></div>
     </div>
