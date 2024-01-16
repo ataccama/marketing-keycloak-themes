@@ -1,4 +1,4 @@
-<#macro registrationLayout bodyClass="" register=false displayPromo=true displayFooter=false displayMessage=true verticallyCentered=false>
+<#macro registrationLayout bodyClass="" sectionClass="" register=false displayPromo=true displayFooter=false displayMessage=true verticallyCentered=false>
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html xmlns="http://www.w3.org/1999/xhtml" class="${properties.kcHtmlClass!}">
@@ -66,12 +66,12 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDQCCZ8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <div class="${properties.layoutBodyClass!}">
+  <div class="${properties.layoutBodyClass!} <#if register>Layout--register</#if>">
     <div class="${properties.layoutTopClass!}">
       <a href="${properties.ataccamaUrl!}" target="_blank" class="Logo">
         <img class="Logo-item" src="${url.resourcesPath}/img/ataccama-cloud-symbol@2x.png" alt="Ataccama">
       </a>
-      <div class="${properties.layoutHeaderClass!}">Sign in to <#if client??>${client.name}<#else>Ataccama</#if></div>
+      <div class="${properties.layoutHeaderClass!}"><#if register>Sing in to<#else>Log in to </#if><#if client??>${client.name}<#else>Ataccama</#if></div>
     </div>
     <div class="${properties.layoutContainerClass!}">
       <div class="${properties.layoutLeftClass!}">
