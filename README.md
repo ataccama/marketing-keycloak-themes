@@ -14,7 +14,7 @@ Create networks for your services before deploying the configuration using the c
 
 Deploy Keycloak using Docker Compose:
 
-`docker compose -f keycloak-traefik-letsencrypt-docker-compose.yml -p keycloak up -d`
+`docker-compose up -d`
 
 # Backups
 
