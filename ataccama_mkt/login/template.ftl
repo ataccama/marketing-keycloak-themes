@@ -71,7 +71,7 @@
       <a href="${properties.ataccamaUrl!}" target="_blank" class="Logo">
         <img class="Logo-item" src="${url.resourcesPath}/img/ataccama-cloud-symbol@2x.png" alt="Ataccama">
       </a>
-      <div class="${properties.layoutHeaderClass!}"><#if register>Sing in to <#else>Log in to </#if><#if client??>${client.name}<#else>Ataccama</#if></div>
+      <div class="${properties.layoutHeaderClass!}"><#if register>Sign in to <#else>Log in to </#if><#if client??>${client.name}<#else>Ataccama</#if></div>
     </div>
     <div class="${properties.layoutContainerClass!}">
       <div class="${properties.layoutLeftClass!}">
