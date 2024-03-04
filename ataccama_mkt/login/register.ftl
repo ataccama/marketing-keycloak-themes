@@ -11,14 +11,6 @@
       New users LDAP synchronization upon registration
     -->
     <script>
-      function ldapSync() {
-        var email = document.getElementById('email').value;
-        const Http = new XMLHttpRequest();
-        const url='https://api.ataccama.com/api/sync?email='+email;
-        Http.open("GET", url);
-        Http.send();
-      }
-
       document.addEventListener ("DOMContentLoaded", (event) => {
 
         const utmParams = [
@@ -44,7 +36,7 @@
       });
     </script>
 
-    <form onsubmit="ldapSync();return true;" class="${properties.formClass!}" action="${url.registrationAction}" method="post">
+    <form class="${properties.formClass!}" action="${url.registrationAction}" method="post">
       <div class="${properties.formDoubleGroupClass!}">
         <div class="${properties.formGroupClass!} ${properties.formDoubleGroupSubgroupClass!}">
           <div class="${properties.formLabelWrapperClass!}">
