@@ -6,43 +6,13 @@
     <!-- Header -->
     ${msg("registrationHeader")?no_esc}
   <#elseif section = "form">
-
-    <#--
-      New users LDAP synchronization upon registration
-    -->
-    <script>
-      document.addEventListener ("DOMContentLoaded", (event) => {
-
-        const utmParams = [
-          'utm_source',
-          'utm_medium',
-          'utm_campaign'
-        ];
-
-        utmParams.forEach(param => {
-          let utm_param = getUrlParameter(param);
-          let input = document.getElementById('user.attributes.'+param);
-          
-          if(utm_param) {
-            setCookie(param, utm_param, 1);
-            input.value = utm_param;
-          } else {
-            let cookie_utm = getCookie(param);
-            if(cookie_utm) {
-              input.value = cookie_utm;
-            }
-          }
-        });
-      });
-    </script>
-
     <form class="${properties.formClass!}" action="${url.registrationAction}" method="post">
       <div class="${properties.formDoubleGroupClass!}">
         <div class="${properties.formGroupClass!} ${properties.formDoubleGroupSubgroupClass!}">
           <div class="${properties.formLabelWrapperClass!}">
             <label for="firstName" class="${properties.formLabelClass!}">${msg("firstName")}</label>
           </div>
-          <input type="text" id="firstName" class="${properties.formInputClass!}" name="firstName" value="${(register.formData.firstName!'')}" required />
+          <input type="text" id="firstName" class="${properties.formInputClass!}" name="firstName" value="${(register.formData.firstName!'')}" />
           <#if messagesPerField.exists('firstName')>
             <div class="${properties.formInputErrorClass!}">
               ${messagesPerField.get('firstName')}
@@ -54,7 +24,7 @@
           <div class="${properties.formLabelWrapperClass!}">
             <label for="lastName" class="${properties.formLabelClass!}">${msg("lastName")}</label>
           </div>
-          <input type="text" id="lastName" class="${properties.formInputClass!}" name="lastName" value="${(register.formData.lastName!'')}" required />
+          <input type="text" id="lastName" class="${properties.formInputClass!}" name="lastName" value="${(register.formData.lastName!'')}" />
           <#if messagesPerField.exists('lastName')>
             <div class="${properties.formInputErrorClass!}">
               ${messagesPerField.get('lastName')}
@@ -64,16 +34,16 @@
       </div>
 
       <div class="${properties.formGroupClass!}">
-          <div class="${properties.formLabelWrapperClass!}">
-            <label for="email" class="${properties.formLabelClass!}">${msg("email")}</label>
-          </div>
-          <input type="text" id="email" class="${properties.formInputClass!}" name="email" value="${(register.formData.email!'')}" autocomplete="email" />
-          <#if messagesPerField.exists('email')>
-            <div class="${properties.formInputErrorClass!}">
-              ${messagesPerField.get('email')}
-            </div>
-          </#if>
+        <div class="${properties.formLabelWrapperClass!}">
+          <label for="email" class="${properties.formLabelClass!}">${msg("email")}</label>
         </div>
+        <input type="text" id="email" class="${properties.formInputClass!}" name="email" value="${(register.formData.email!'')}" autocomplete="email" />
+        <#if messagesPerField.exists('email')>
+          <div class="${properties.formInputErrorClass!}">
+            ${messagesPerField.get('email')}
+          </div>
+        </#if>
+      </div>
 
       <#if !realm.registrationEmailAsUsername>
         <div class="${properties.formGroupClass!}">
@@ -88,30 +58,6 @@
           </#if>
         </div>
       </#if>
-
-      <div class="${properties.formGroupClass!}">
-          <div class="${properties.formLabelWrapperClass!}">
-            <label for="user.attributes.phone" class="${properties.formLabelClass!}">${msg("phone")}</label>
-          </div>
-          <input type="text" id="user.attributes.phone" class="${properties.formInputClass!}" name="user.attributes.phone" value="${(register.formData.phone!'')}" required />
-          <#if messagesPerField.exists('user.attributes.phone')>
-            <div class="${properties.formInputErrorClass!}">
-              ${messagesPerField.get('user.attributes.phone')}
-            </div>
-          </#if>
-        </div>
-
-      <div class="${properties.formGroupClass!}">
-          <div class="${properties.formLabelWrapperClass!}">
-            <label for="user.attributes.company" class="${properties.formLabelClass!}">${msg("company")}</label>
-          </div>
-          <input type="text" id="user.attributes.company" class="${properties.formInputClass!}" name="user.attributes.company" value="${(register.formData.company!'')}" required />
-          <#if messagesPerField.exists('user.attributes.company')>
-            <div class="${properties.formInputErrorClass!}">
-              ${messagesPerField.get('user.attributes.company')}
-            </div>
-          </#if>
-        </div>
 
       <#if passwordRequired>
         <div class="${properties.formGroupClass!}">
@@ -158,11 +104,6 @@
       <div class="${properties.formGroupClass!}">
         <input class="${properties.formButtonClass!}" type="submit" value="${msg("doRegister")}" />
       </div>
-
-      <input type="hidden" id="user.attributes.utm_source" style="display:none;" name="user.attributes.utm_source" value="${(register.formData['user.attributes.utm_source']!'')}" />
-      <input type="hidden" id="user.attributes.utm_medium" style="display:none;" name="user.attributes.utm_medium" value="${(register.formData['user.attributes.utm_medium']!'')}" />
-      <input type="hidden" id="user.attributes.utm_campaign" style="display:none;" name="user.attributes.utm_campaign" value="${(register.formData['user.attributes.utm_campaign']!'')}" />
-
     </form>
   <#elseif section = "info">
     <div class="${properties.formOptionsClass!}">

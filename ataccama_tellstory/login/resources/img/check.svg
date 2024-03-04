@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Checkbox / Active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Form" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-388.000000, -1749.000000)">
+        <g id="Checkbox" transform="translate(385.000000, 1585.000000)" fill="#616161">
+            <g id="States" transform="translate(0.000000, 159.000000)">
+                <g id="Form/Checkbox/State/Default">
+                    <polygon id="Checkbox-/-Active" points="7.24264069 10.6568542 4.41421356 7.82842712 3 9.24264069 7.24264069 13.4852814 14.3137085 6.41421356 12.8994949 5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -20,7 +20,7 @@ services:
       dockerfile: .Dockerfile
     image: keycloak-custom-theme:latest
     volumes:
-      - ./ataccama_mkt:/opt/bitnami/keycloak/themes/ataccama_mkt
+      - ./ataccama_tellstory:/opt/bitnami/keycloak/themes/ataccama_tellstory
     networks:
       - keycloak-network
     depends_on:
@@ -64,7 +64,7 @@ services:
       KC_PROXY_ADDRESS_FORWARDING: 'true'
       KC_HTTP_ENABLED: 'true'
     volumes:
-      - ./ataccama_mkt:/opt/bitnami/keycloak/themes/ataccama_mkt
+      - ./ataccama_tellstory:/opt/bitnami/keycloak/themes/ataccama_tellstory
     networks:
       - keycloak-network
       - traefik-network
