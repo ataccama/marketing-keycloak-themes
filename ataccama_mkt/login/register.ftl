@@ -1,5 +1,5 @@
 <#import "template.ftl" as layout>
-<@layout.registrationLayout sectionClass=zadek verticallyCentered=true register=true displayPromo=false displayMessage=false; section>
+<@layout.registrationLayout verticallyCentered=true register=true displayPromo=false displayMessage=false; section>
   <#if section = "title">
     ${msg("registerWithTitle",(client.name!''))}
   <#elseif section = "header">
