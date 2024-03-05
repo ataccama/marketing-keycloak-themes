@@ -59,7 +59,7 @@
 
 
                           <img align="center" alt=""
-                               src="https://mcusercontent.com/c301cea7bf782e848c4531b64/images/5cd88aea-efb9-471d-939b-adbd067d427d.png"
+                               src="https://www.ataccama.com/files/emails/logo-keycloak.png"
                                width="170.5"
                                style="max-width: 341px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border-top-left-radius: 1%;border-top-right-radius: 1%;border-bottom-right-radius: 1%;border-bottom-left-radius: 1%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"
                                class="mcnRetinaImage">
@@ -169,7 +169,7 @@
                   <td style="padding-top: 0;padding-right: 18px;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                       valign="top" align="center" class="mcnButtonBlockInner">
                     <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer"
-                           style="border-collapse: separate !important;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;background-color: #D6006D;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                           style="border-collapse: separate !important;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;background-color: #f10090;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                       <tbody>
                       <tr>
                         <td align="center" valign="middle" class="mcnButtonContent"
@@ -368,7 +368,7 @@
 
 
                           <img align="left" alt=""
-                               src="https://mcusercontent.com/c301cea7bf782e848c4531b64/images/0c25af62-c4dc-4b27-81ef-4bd0a44fd874.png"
+                               src="https://www.ataccama.com/files/emails/logo-footer-keycloak.png"
                                width="170.5"
                                style="max-width: 341px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border-top-left-radius: 1%;border-top-right-radius: 1%;border-bottom-right-radius: 1%;border-bottom-left-radius: 1%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"
                                class="mcnRetinaImage">

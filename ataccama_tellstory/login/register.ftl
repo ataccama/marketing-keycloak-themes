@@ -6,6 +6,34 @@
     <!-- Header -->
     ${msg("registrationHeader")?no_esc}
   <#elseif section = "form">
+
+  <script>
+        document.addEventListener ("DOMContentLoaded", (event) => {
+
+          const utmParams = [
+            'utm_source',
+            'utm_medium',
+            'utm_campaign'
+          ];
+
+          utmParams.forEach(param => {
+            let utm_param = getUrlParameter(param);
+            let input = document.getElementById('user.attributes.'+param);
+
+            if(utm_param) {
+              setCookie(param, utm_param, 1);
+              input.value = utm_param;
+            } else {
+              let cookie_utm = getCookie(param);
+              if(cookie_utm) {
+                input.value = cookie_utm;
+              }
+            }
+          });
+        });
+      </script>
+
+
     <form class="${properties.formClass!}" action="${url.registrationAction}" method="post">
       <div class="${properties.formDoubleGroupClass!}">
         <div class="${properties.formGroupClass!} ${properties.formDoubleGroupSubgroupClass!}">
@@ -104,6 +132,11 @@
       <div class="${properties.formGroupClass!}">
         <input class="${properties.formButtonClass!}" type="submit" value="${msg("doRegister")}" />
       </div>
+
+    <input type="hidden" id="user.attributes.utm_source" style="display:none;" name="user.attributes.utm_source" value="${(register.formData['user.attributes.utm_source']!'')}" />
+    <input type="hidden" id="user.attributes.utm_medium" style="display:none;" name="user.attributes.utm_medium" value="${(register.formData['user.attributes.utm_medium']!'')}" />
+    <input type="hidden" id="user.attributes.utm_campaign" style="display:none;" name="user.attributes.utm_campaign" value="${(register.formData['user.attributes.utm_campaign']!'')}" />
+
     </form>
   <#elseif section = "info">
     <div class="${properties.formOptionsClass!}">
