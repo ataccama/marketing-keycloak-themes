@@ -61,7 +61,7 @@
 
   </head>
 
-  <body>
+  <body class="${properties.kcBodyClass!}">
 
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDQCCZ8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -79,16 +79,18 @@
           <#if displayMessage && message?has_content>
             <div class="${properties.layoutInfoAreaClass!}">
               <div class="alert alert-${message.type}">
-                  <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
-                  <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
-                  <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon!}"></span></#if>
-                  <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
-                <span>${message.summary?no_esc}</span>
+                    <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
+                    <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
+                    <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon!}"></span></#if>
+                    <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
+                    <span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
               </div>
             </div>
           </#if>
           <#nested "form">
-          <#nested "info">
+          <#if displayInfo>
+            <#nested "info">
+          </#if>
       </div>
     </div>
       <#--    <div class="Banner">-->

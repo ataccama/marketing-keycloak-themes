@@ -36,7 +36,7 @@
       });
     </script>
 
-    <form class="${properties.formClass!}" action="${url.registrationAction}" method="post">
+    <form id="kc-register-form" class="${properties.formClass!}" action="${url.registrationAction}" method="post">
       <div class="${properties.formDoubleGroupClass!}">
         <div class="${properties.formGroupClass!} ${properties.formDoubleGroupSubgroupClass!}">
           <div class="${properties.formLabelWrapperClass!}">
@@ -146,9 +146,11 @@
       </#if>
 
       <#if recaptchaRequired??>
-        <div class="form-group">
-          <div class="g-recaptcha" data-size="compact" data-sitekey="${recaptchaSiteKey}"></div>
-        </div>
+          <div class="form-group">
+              <div class="${properties.kcInputWrapperClass!}">
+                  <div class="g-recaptcha" data-size="compact" data-sitekey="${recaptchaSiteKey}"></div>
+              </div>
+          </div>
       </#if>
 
       <div class="${properties.formGroupClass!}">
